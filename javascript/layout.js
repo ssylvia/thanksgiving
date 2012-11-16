@@ -7,22 +7,22 @@ dojo.mixin(utilities.layout,{
         "turkey" : {
             "layerName" : "turkey",
             "linkText" : "Turkey",
-            "description" : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.<br><br>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
+            "description" : "Turkey farmers want to be where there the corn and soybeans are. Geographically, then, big turkey producers are located near to processing plants and the cheap foods that will feed their livestock (Which explains the dots few and far between in regions like Utah and Texas).<br><br>There is also a large and vibrant industry of small scale production, as the smattering of dots on the map indicate. In fact, it’s not unusual to have turkey farms with a relatively small number of hogs and small-scale beef production too."
         },
         "sweetPotatoes" : {
             "layerName" : "potatoes",
             "linkText" : "Sweet Potatoes",
-            "description" : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.<br><br>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane."
+            "description" : "Like cranberries, sweet potatoes are picky and require specific conditions to yield the best crops. They need a long growing season, heat in the summer and a ton of water. For this reason sweet potatoes have the best yield in the south. They were first grown in South America, though they are often confused with the white starchy yam originating from West Africa and Asia—especially during the holidays."
         },
         "cranberries" : {
             "layerName" : "cranberries",
             "linkText" : "Cranberries",
-            "description" : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.<br><br>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
+            "description" : "Cranberries require very specific growing conditions. Because they are traditionally grown in natural wetlands, they need a lot of water. They also require a period of dormancy during the winter months which limits the regions in which they are grown to the northern parts of America."
         },
         "greenbeans" : {
             "layerName" : "greenbeans",
             "linkText" : "Green Beans",
-            "description" : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.<br><br>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."
+            "description" : "Though the map indicates that green bean farms are evenly scattered throughout a large part of the country, in the regions with the highest production—the south and the midwest for example—most of the production is driven by the location of the processing industries."
         }
     },
     
@@ -84,6 +84,9 @@ dojo.mixin(utilities.layout,{
         if(!layer.fading){
             layer.fading = true;
         }
+        if(!layer.visible){
+            layer.show();
+        }
         if(layer.opacity < 1 && layer.fading === true){
             layer.setOpacity(layer.opacity + 0.05);
             setTimeout(function() {
@@ -108,6 +111,7 @@ dojo.mixin(utilities.layout,{
         }
         else{
             layer.setOpacity(0);
+            layer.hide();
             layer.fading = false;
         }
     }
