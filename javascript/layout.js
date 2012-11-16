@@ -19,7 +19,7 @@ dojo.mixin(utilities.layout,{
             "linkText" : "Cranberries",
             "description" : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.<br><br>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
         },
-        "greenBeans" : {
+        "greenbeans" : {
             "layerName" : "greenbeans",
             "linkText" : "Green Beans",
             "description" : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.<br><br>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."
@@ -34,6 +34,11 @@ dojo.mixin(utilities.layout,{
         dojo.forEach(this.getLayerByName(map,this.foods.turkey.layerName,true,false),function(lyr,i){
             utilities.layout.fadeLayerIn(map,lyr);
         });
+    },
+    
+    changeFood : function(food){
+        $("#description").html(this.foods[food].description);
+        this.startFade(this.getLayerByName(map,food)[0])
     },
     
     getLayerByName : function(mapVariable,layerName,searchMainLayers,searchGraphicsLayers){

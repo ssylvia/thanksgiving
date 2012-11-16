@@ -80,3 +80,53 @@
 {"ts":1353094631923,"patch":[[{"diffs":[[0,"ut.initA"],[1,"pp("],[0,"\r\n    }\r"]],"start1":2627,"start2":2627,"length1":16,"length2":19}]],"length":5915,"saved":false}
 {"ts":1353094633287,"patch":[[{"diffs":[[0,"initApp("],[1,");"],[0,"\r\n    }\r"]],"start1":2630,"start2":2630,"length1":16,"length2":18}]],"length":5917,"saved":false}
 {"ts":1353095157392,"patch":[[{"diffs":[[0,");\r\n"],[-1,"        utilities.layout.initApp();\r\n"],[0,"    "]],"start1":2601,"start2":2601,"length1":45,"length2":8}]],"length":5880,"saved":false}
+{"ts":1353101057079,"patch":[[{"diffs":[[0," region=\"top\">\r\n"],[1,"                \r\n"],[0,"                "]],"start1":4932,"start2":4932,"length1":32,"length2":50}]],"length":5898,"saved":false}
+{"ts":1353101058034,"patch":[[{"diffs":[[0,"                "],[1,"    Bu"],[0,"\r\n              "]],"start1":4948,"start2":4948,"length1":32,"length2":38}]],"length":5904,"saved":false}
+{"ts":1353101059511,"patch":[[{"diffs":[[0,"       B"],[-1,"u"],[0,"\r\n      "]],"start1":4961,"start2":4961,"length1":17,"length2":16}]],"length":5903,"saved":false}
+{"ts":1353101059885,"patch":[[{"diffs":[[0,"        "],[-1,"B"],[0,"\r\n      "]],"start1":4960,"start2":4960,"length1":17,"length2":16}]],"length":5902,"saved":false}
+{"ts":1353101063403,"patch":[[{"diffs":[[0,"                "],[1,"<button"],[0,"\r\n              "]],"start1":4952,"start2":4952,"length1":32,"length2":39}]],"length":5909,"saved":false}
+{"ts":1353101065616,"patch":[[{"diffs":[[0," <button"],[1," o"],[0,"\r\n      "]],"start1":4967,"start2":4967,"length1":16,"length2":18}]],"length":5911,"saved":false}
+{"ts":1353101066615,"patch":[[{"diffs":[[0,"button o"],[1,"n"],[0,"\r\n      "]],"start1":4969,"start2":4969,"length1":16,"length2":17}]],"length":5912,"saved":false}
+{"ts":1353101068035,"patch":[[{"diffs":[[0,"utton on"],[1,"click"],[0,"\r\n      "]],"start1":4970,"start2":4970,"length1":16,"length2":21}]],"length":5917,"saved":false}
+{"ts":1353101072633,"patch":[[{"diffs":[[0," onclick"],[1,"=\""],[0,"\r\n      "]],"start1":4975,"start2":4975,"length1":16,"length2":18}]],"length":5919,"saved":false}
+{"ts":1353101073618,"patch":[[{"diffs":[[0,"nclick=\""],[1,"u"],[0,"\r\n      "]],"start1":4977,"start2":4977,"length1":16,"length2":17}]],"length":5920,"saved":false}
+{"ts":1353101083135,"patch":[[{"diffs":[[0,"click=\"u"],[1,"tilities.layout.changeFood(\"greenbeans\")"],[0,"\r\n      "]],"start1":4978,"start2":4978,"length1":16,"length2":56}]],"length":5960,"saved":false}
+{"ts":1353101088613,"patch":[[{"diffs":[[0,"ngeFood("],[-1,"\""],[1,"'"],[0,"greenbea"]],"start1":5005,"start2":5005,"length1":17,"length2":17},{"diffs":[[0,"eenbeans"],[-1,"\""],[0,")\r\n     "]],"start1":5016,"start2":5016,"length1":17,"length2":16}]],"length":5959,"saved":false}
+{"ts":1353101089649,"patch":[[{"diffs":[[0,"eenbeans"],[1,"'"],[0,")\r\n     "]],"start1":5016,"start2":5016,"length1":16,"length2":17}]],"length":5960,"saved":false}
+{"ts":1353101092944,"patch":[[{"diffs":[[0,"od('"],[-1,"greenbeans"],[1,"Tur"],[0,"')\r\n"]],"start1":5010,"start2":5010,"length1":18,"length2":11}]],"length":5953,"saved":false}
+{"ts":1353101094834,"patch":[[{"diffs":[[0,"ood('Tur"],[1,"key"],[0,"')\r\n    "]],"start1":5009,"start2":5009,"length1":16,"length2":19}]],"length":5956,"saved":false}
+{"ts":1353101096957,"patch":[[{"diffs":[[0,"od('"],[-1,"Turkey"],[1,"t"],[0,"')\r\n"]],"start1":5010,"start2":5010,"length1":14,"length2":9}]],"length":5951,"saved":false}
+{"ts":1353101098050,"patch":[[{"diffs":[[0,"eFood('t"],[1,"ur"],[0,"')\r\n    "]],"start1":5007,"start2":5007,"length1":16,"length2":18}]],"length":5953,"saved":false}
+{"ts":1353101099287,"patch":[[{"diffs":[[0,"ood('tur"],[1,"key"],[0,"')\r\n    "]],"start1":5009,"start2":5009,"length1":16,"length2":19}]],"length":5956,"saved":false}
+{"ts":1353101105346,"patch":[[{"diffs":[[0,"turkey')"],[1,"\">"],[0,"\r\n      "]],"start1":5014,"start2":5014,"length1":16,"length2":18}]],"length":5958,"saved":false}
+{"ts":1353101109021,"patch":[[{"diffs":[[0,"rkey')\">"],[1,"T"],[0,"\r\n      "]],"start1":5016,"start2":5016,"length1":16,"length2":17}]],"length":5959,"saved":false}
+{"ts":1353101110569,"patch":[[{"diffs":[[0,"key')\">T"],[1,"urke"],[0,"\r\n      "]],"start1":5017,"start2":5017,"length1":16,"length2":20}]],"length":5963,"saved":false}
+{"ts":1353101111525,"patch":[[{"diffs":[[0,")\">Turke"],[1,"y"],[0,"\r\n      "]],"start1":5021,"start2":5021,"length1":16,"length2":17}]],"length":5964,"saved":false}
+{"ts":1353101115845,"patch":[[{"diffs":[[0,"\">Turkey"],[1,"</"],[0,"\r\n      "]],"start1":5022,"start2":5022,"length1":16,"length2":18}]],"length":5966,"saved":false}
+{"ts":1353101118508,"patch":[[{"diffs":[[0,"Turkey</"],[1,"button"],[0,"\r\n      "]],"start1":5024,"start2":5024,"length1":16,"length2":22}]],"length":5972,"saved":false}
+{"ts":1353101121352,"patch":[[{"diffs":[[0,"</button"],[1,">"],[0,"\r\n      "]],"start1":5030,"start2":5030,"length1":16,"length2":17}]],"length":5973,"saved":false}
+{"ts":1353101123865,"patch":[[{"diffs":[[0,"utton>\r\n"],[1,"                    <button onclick=\"utilities.layout.changeFood('turkey')\">Turkey</button>\r\n"],[0,"        "]],"start1":5033,"start2":5033,"length1":16,"length2":109}]],"length":6066,"saved":false}
+{"ts":1353101127019,"patch":[[{"diffs":[[0,"urkey</button>\r\n"],[1,"                    \r\n"],[0,"                "]],"start1":5025,"start2":5025,"length1":32,"length2":54}]],"length":6088,"saved":false}
+{"ts":1353101128487,"patch":[[{"diffs":[[0,"                "],[1,"<br"],[0,"\r\n              "]],"start1":5045,"start2":5045,"length1":32,"length2":35}]],"length":6091,"saved":false}
+{"ts":1353101130081,"patch":[[{"diffs":[[0,"     <br"],[1,">"],[0,"\r\n      "]],"start1":5056,"start2":5056,"length1":16,"length2":17}]],"length":6092,"saved":false}
+{"ts":1353101137097,"patch":[[{"diffs":[[0,"Food('turkey')\">"],[-1,"Turkey"],[1,"Sweet Pota"],[0,"</button>\r\n     "]],"start1":5127,"start2":5127,"length1":38,"length2":42}]],"length":6096,"saved":false}
+{"ts":1353101139459,"patch":[[{"diffs":[[0,"eet Pota"],[1,"toes"],[0,"</button"]],"start1":5145,"start2":5145,"length1":16,"length2":20}]],"length":6100,"saved":false}
+{"ts":1353101186081,"patch":[[{"diffs":[[0,"  <br>\r\n"],[1,"                    <button onclick=\"utilities.layout.changeFood('turkey')\">Sweet Potatoes</button><br>\r\n"],[0,"        "]],"start1":5059,"start2":5059,"length1":16,"length2":121}]],"length":6205,"saved":false}
+{"ts":1353101188919,"patch":[[{"diffs":[[0,"/button>"],[1,"\r\n                    "],[0,"<br>\r\n  "]],"start1":5158,"start2":5158,"length1":16,"length2":38}]],"length":6227,"saved":false}
+{"ts":1353101191109,"patch":[[{"diffs":[[0,"atoes</button>\r\n"],[1,"                    <br>\r\n                    <button onclick=\"utilities.layout.changeFood('turkey')\">Sweet Potatoes</button>\r\n"],[0,"                "]],"start1":5279,"start2":5279,"length1":32,"length2":159}]],"length":6354,"saved":false}
+{"ts":1353101196531,"patch":[[{"diffs":[[0,"('turkey')\">"],[-1,"Sweet Potatoes"],[1,"GreenB"],[0,"</button>\r\n "]],"start1":5258,"start2":5258,"length1":38,"length2":30}]],"length":6346,"saved":false}
+{"ts":1353101197200,"patch":[[{"diffs":[[0,")\">Green"],[-1,"B"],[0,"</button"]],"start1":5267,"start2":5267,"length1":17,"length2":16}]],"length":6345,"saved":false}
+{"ts":1353101197724,"patch":[[{"diffs":[[0,")\">Green"],[1,"bea"],[0,"</button"]],"start1":5267,"start2":5267,"length1":16,"length2":19}]],"length":6348,"saved":false}
+{"ts":1353101198791,"patch":[[{"diffs":[[0,"Greenbea"],[1,"ns"],[0,"</button"]],"start1":5270,"start2":5270,"length1":16,"length2":18}]],"length":6350,"saved":false}
+{"ts":1353101202978,"patch":[[{"diffs":[[0,"('turkey')\">"],[-1,"Sweet Potatoes"],[1,"Cran"],[0,"</button>\r\n "]],"start1":5381,"start2":5381,"length1":38,"length2":28}]],"length":6340,"saved":false}
+{"ts":1353101205095,"patch":[[{"diffs":[[0,"')\">Cran"],[1,"berries"],[0,"</button"]],"start1":5389,"start2":5389,"length1":16,"length2":23}]],"length":6347,"saved":false}
+{"ts":1353101211927,"patch":[[{"diffs":[[0,"changeFood('"],[-1,"turkey"],[1,"sweet"],[0,"')\">Sweet Po"]],"start1":5121,"start2":5121,"length1":30,"length2":29}]],"length":6346,"saved":false}
+{"ts":1353101214113,"patch":[[{"diffs":[[0,"d('sweet"],[1,"Pato"],[0,"')\">Swee"]],"start1":5130,"start2":5130,"length1":16,"length2":20}]],"length":6350,"saved":false}
+{"ts":1353101215671,"patch":[[{"diffs":[[0,"weetPato"],[1,"t"],[0,"')\">Swee"]],"start1":5134,"start2":5134,"length1":16,"length2":17}]],"length":6351,"saved":false}
+{"ts":1353101217214,"patch":[[{"diffs":[[0,"eetPatot"],[1,"es"],[0,"')\">Swee"]],"start1":5135,"start2":5135,"length1":16,"length2":18}]],"length":6353,"saved":false}
+{"ts":1353101218654,"patch":[[{"diffs":[[0,"Pato"],[-1,"tes"],[0,"')\">"]],"start1":5138,"start2":5138,"length1":11,"length2":8}]],"length":6350,"saved":false}
+{"ts":1353101219976,"patch":[[{"diffs":[[0,"'sweetPa"],[-1,"to"],[0,"')\">Swee"]],"start1":5132,"start2":5132,"length1":18,"length2":16}]],"length":6348,"saved":false}
+{"ts":1353101223370,"patch":[[{"diffs":[[0,"('sweetP"],[-1,"a"],[1,"otatoes"],[0,"')\">Swee"]],"start1":5131,"start2":5131,"length1":17,"length2":23}]],"length":6354,"saved":false}
+{"ts":1353101228417,"patch":[[{"diffs":[[0,"changeFood('"],[-1,"turkey"],[1,"greenbeans"],[0,"')\">Greenbea"]],"start1":5255,"start2":5255,"length1":30,"length2":34}]],"length":6358,"saved":false}
+{"ts":1353101231743,"patch":[[{"diffs":[[0,"changeFood('"],[-1,"turkey"],[1,"cranber"],[0,"')\">Cranberr"]],"start1":5382,"start2":5382,"length1":30,"length2":31}]],"length":6359,"saved":false}
+{"ts":1353101234668,"patch":[[{"diffs":[[0,"'cranber"],[1,"ries"],[0,"')\">Cran"]],"start1":5393,"start2":5393,"length1":16,"length2":20}]],"length":6363,"saved":false}
