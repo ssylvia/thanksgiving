@@ -5,16 +5,16 @@ define({root:
       scaleBarUnits: "english" //"english (for miles) or "metric" (for km) - don't translate.
     },
     errors:{
-      createMap: "Unable to create map:",
-      general:"Error",
-	  timeout:"Please choose another tab to begin"
+      createMap: "Unable to create map: ",
+      general:"Error"
     },
-    loading:{
-    	message: "Loading maps"
-    },
-	sidePanel:{
-        legendHeader: "LEGEND"
-    }
+    legToggle:{
+	  up:"MAP LEGEND ▲",
+	  down:"MAP LEGEND ▼"
+	},
+	loading:{
+		message: "Loading map"
+	}
   }
 }),
 "ar":1,

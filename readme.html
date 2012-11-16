@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Storytelling Template - Read Me</title>
+<title>Layout Template - Read Me</title>
 <style>
 .selector{color:red;}
 .heading{
@@ -56,15 +56,9 @@ View the <a href="http://help.arcgis.com/EN/webapi/javascript/arcgis/help/jshelp
     <img src="documentation/findmapid.png"/><br /><br />
     <li>Open the index.html file in a text editor. You can edit this file to set the following application properties:
 <ul>
-  <li><b>webmaps: </b>unique identifier for the ArcGIS.com map.</li>
+  <li><b>webmap: </b>unique identifier for the ArcGIS.com map.</li>
   <li><b>title: </b>if not specified the ArcGIS.com map's title is used</li> 
-  <li><b>subTitle: </b>if not specified the ArcGIS.com webmap's summary is used</li> 
-  <li><b>description: </b>if not specified the ArcGIS.com webmap's description is used (application with multiple webmaps will always use the webmap's description from ArcGIS.com)</li>
-  <li><b>tabTitles: </b>if not specified the ArcGIS.com map's title is used and truncated if needed</li> 
-  <li><b>displayDescription: </b>choose to display your description in the side panel</li>
-  <li><b>displayLegend: </b>choose to display your legend in the side panel</li>    
-  <li><b>loop: </b>choose to have your time animation repeat</li>
-  <li><b>syncMaps: </b>choose to have your map's scale and location syncronized</li>      
+  <li><b>subTitle: </b>if not specified the ArcGIS.com web map's summary is used</li>  
   <li><b>bingMapsKey: </b>if the map uses data from Bing Maps, enter your Bing Maps Key</li>  
  
 </ul></li><br />
@@ -72,11 +66,7 @@ View the <a href="http://help.arcgis.com/EN/webapi/javascript/arcgis/help/jshelp
 <pre>
 function init(){
   //The ID for the map from ArcGIS.com
-  webmaps =  [{
-    "id": <span class="selector">dbd1c6d52f4e447f8c01d14a691a70fe</span>
-    },{
-    "id": <span class="selector">dbd1c6d52f4e447f8c01d14a691a70fe</span>
-  }];
+  webmap =  "<span class="selector">dbd1c6d52f4e447f8c01d14a691a70fe</span>";
 </pre>
  <li>If your map contains data from Bing Maps, enter your <a href="http://help.arcgis.com/en/webapi/javascript/arcgis/help/jshelp_start.htm#jshelp/ve_getting_started.htm">Bing Maps key</a>.
  <pre>
@@ -86,16 +76,6 @@ bingMapsKey = "<span class="selector">Enter your Bing Maps Key here</span>";
  <pre>
 title = "<span class="selector">This is a custom title for your map</span>";
 subtitle = "<span class="selector">This is a custom subtitle</span>";
-description = "<span class="selector">This is a custom description</span>";
-tabTitles =  [{
-    "title": <span class="selector">This is a custom title that will appear as a tab above the map</span>
-    },{
-    "title": <span class="selector">Another custom title</span>
-}];
-displayDescription = "<span class="selector">true or false</span>";
-displayLegend = "<span class="selector">true or false</span>";
-loop = "<span class="selector">true or false</span>";
-syncMaps = "<span class="selector">true or false</span>";
  </pre>
  <li>Save the file then test your <a href="http://localhost/Chrome/index.html">application</a> and note that it now displays your map and if specified your custom title and subtitle.</li>
  </ol>
