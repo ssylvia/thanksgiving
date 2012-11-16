@@ -38,7 +38,7 @@ dojo.mixin(utilities.layout,{
     
     changeFood : function(food){
         $("#description").html(this.foods[food].description);
-        this.startFade(this.getLayerByName(map,food)[0])
+        this.startFade(this.getLayerByName(map,food));
     },
     
     getLayerByName : function(mapVariable,layerName,searchMainLayers,searchGraphicsLayers){
@@ -62,10 +62,11 @@ dojo.mixin(utilities.layout,{
         return layers;
     },
     
-    startFade : function(layer){
+    startFade : function(layers){
+        console.log(layers);
         dojo.forEach(this.getLayerByName(map,"thanksgiving",true,false),function(lyr){
             lyr.fading = false;
-            if (lyr === layer) {
+            if ($.inArray(lyr,layers) !== -1) {
                 setTimeout(function() {
                     lyr.fading = true;
                     utilities.layout.fadeLayerIn(map,lyr);
@@ -81,9 +82,6 @@ dojo.mixin(utilities.layout,{
     },
     
     fadeLayerIn : function(mapVariable,layer){
-        if(!layer.fading){
-            layer.fading = true;
-        }
         if(!layer.visible){
             layer.show();
         }
@@ -100,9 +98,6 @@ dojo.mixin(utilities.layout,{
     },
     
     fadeLayerOut : function(mapVariable,layer){
-        if(!layer.fading){
-            layer.fading = true;
-        }
         if(layer.opacity > 0 && layer.fading === true){
             layer.setOpacity(layer.opacity - 0.05);
             setTimeout(function() {
