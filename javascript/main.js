@@ -263,8 +263,9 @@
     },
 
     hideLoader:function(){
-      $("#loadingCon").hide();
+      if (!map.appReady){
+        map.appReady = true;
+        $("#loadingCon").hide();
+      }
 	}
-
-
   });

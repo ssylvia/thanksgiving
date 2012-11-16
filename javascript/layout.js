@@ -28,6 +28,83 @@ dojo.mixin(utilities.layout,{
     
     initApp : function(){
         $("#description").html(this.foods.turkey.description);
+        dojo.forEach(this.getLayerByName(map,"thanksgiving",true,false),function(lyr){
+            lyr.setOpacity(0);
+        });
+        dojo.forEach(this.getLayerByName(map,this.foods.turkey.layerName,true,false),function(lyr,i){
+            utilities.layout.fadeLayerIn(map,lyr);
+        });
+    },
+    
+    getLayerByName : function(mapVariable,layerName,searchMainLayers,searchGraphicsLayers){
+        var layers = [];
+        
+        if(searchMainLayers !== false){
+            dojo.forEach(mapVariable.layerIds,function(lyr){
+                if(lyr.toLowerCase().search(layerName.toLowerCase()) !== -1){
+                    layers.push(mapVariable.getLayer(lyr));
+                }
+            });
+        }
+        if(searchGraphicsLayers !== false){
+            dojo.forEach(mapVariable.graphicsLayerIds,function(lyr){
+                if(lyr.toLowerCase().search(layerName.toLowerCase()) !== -1){
+                    layers.push(mapVariable.getLayer(lyr));
+                }
+            });
+        }
+        
+        return layers;
+    },
+    
+    startFade : function(layer){
+        dojo.forEach(this.getLayerByName(map,"thanksgiving",true,false),function(lyr){
+            lyr.fading = false;
+            if (lyr === layer) {
+                setTimeout(function() {
+                    lyr.fading = true;
+                    utilities.layout.fadeLayerIn(map,lyr);
+                }, 11);
+            }
+            else{
+                setTimeout(function() {
+                    lyr.fading = true;
+                    utilities.layout.fadeLayerOut(map,lyr);
+                }, 11);
+            }
+        });
+    },
+    
+    fadeLayerIn : function(mapVariable,layer){
+        if(!layer.fading){
+            layer.fading = true;
+        }
+        if(layer.opacity < 1 && layer.fading === true){
+            layer.setOpacity(layer.opacity + 0.05);
+            setTimeout(function() {
+                utilities.layout.fadeLayerIn(mapVariable,layer);
+            }, 10);
+        }
+        else{
+            layer.setOpacity(1);
+            layer.fading = false;
+        }
+    },
+    
+    fadeLayerOut : function(mapVariable,layer){
+        if(!layer.fading){
+            layer.fading = true;
+        }
+        if(layer.opacity > 0 && layer.fading === true){
+            layer.setOpacity(layer.opacity - 0.05);
+            setTimeout(function() {
+                utilities.layout.fadeLayerOut(mapVariable,layer);
+            }, 10);
+        }
+        else{
+            layer.setOpacity(0);
+            layer.fading = false;
+        }
     }
     
 });
