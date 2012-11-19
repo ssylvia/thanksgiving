@@ -63,7 +63,6 @@ dojo.mixin(utilities.layout,{
     },
     
     startFade : function(layers){
-        console.log(layers);
         dojo.forEach(this.getLayerByName(map,"thanksgiving",true,false),function(lyr){
             lyr.fading = false;
             if ($.inArray(lyr,layers) !== -1) {
