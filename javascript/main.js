@@ -1,9 +1,14 @@
   dojo.provide("utilities.main");
 
   dojo.require("esri.map");
-  dojo.require("esri.layout");
-  dojo.require("esri.widgets");
+  dojo.require("esri.dijit.Legend");
+  dojo.require("esri.dijit.Scalebar");
   dojo.require("esri.arcgis.utils");
+  dojo.require("esri.IdentityManager");
+  dojo.require("dijit.dijit");
+  dojo.require("dijit.layout.BorderContainer");
+  dojo.require("dijit.layout.ContentPane");
+  dojo.require("dijit.layout.StackContainer");
   dojo.requireLocalization("esriTemplate","template");
 
   //Jquery Layout
